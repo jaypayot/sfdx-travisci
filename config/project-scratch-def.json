@@ -1,9 +1,23 @@
 {
-    "orgName": "wade.wegner Example",
-    "edition": "Developer",
+    "orgName": "Acme",
+    "edition": "Enterprise",
+    "features": ["Communities", "ServiceCloud", "Chatbot"],
     "settings": {
-    "lightningExperienceSettings": {
-        "enableS1DesktopEnabled": true
-
+        "communitiesSettings": {
+            "enableNetworksEnabled": true
+        },
+        "mobileSettings": {
+            "enableS1EncryptedStoragePref2": true
+        },
+        "omniChannelSettings": {
+            "enableOmniChannel": true
+        },
+        "caseSettings": {
+            "systemUserEmail": "support@acme.com"
+        },
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+    
+        }
     }
-}
+  }
