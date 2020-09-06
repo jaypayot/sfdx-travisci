@@ -1,0 +1,22 @@
+steps:
+  - label: "Initial Environment Setup"
+    key: Setup
+    agents:
+        queue: salesforce_linux
+    command: ".buildkite/setup.sh"
+    #command: ".buildkite\\script.sh"
+  
+  - label : "Authenticate to Org"
+    key : Authenticate
+    agents:
+      queue: salesforce_linux
+    #command: ".buildkite\\getauthenticated.sh"
+    command: ".buildkite/getauthenticated.sh"
+
+  - label : "Get Delta Changes for Deployment"
+    key : GetDelta
+    agents:
+      queue: salesforce_linux
+    #command: ".buildkite\\getDelta.sh"
+    command: ".buildkite/getDelta.sh"
+
